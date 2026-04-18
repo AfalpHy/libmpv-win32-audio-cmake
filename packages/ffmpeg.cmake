@@ -5,14 +5,12 @@ ExternalProject_Add(ffmpeg
         lcms2
         openssl
         libssh
-        libass
         libmodplug
         libpng
         libsoxr
         libwebp
         libzimg
         libmysofa
-        harfbuzz
         opus
         speex
         vorbis
@@ -30,6 +28,7 @@ ExternalProject_Add(ffmpeg
         --target-os=mingw32
         --pkg-config-flags=--static
         --enable-cross-compile
+        --disable-inline-asm # This stops the 'shr' assembler errors
         --enable-runtime-cpudetect
         ${ffmpeg_hardcoded_tables}
 
@@ -174,6 +173,10 @@ ExternalProject_Add(ffmpeg
 
         --enable-filter=overlay
         --enable-filter=equalizer
+        --enable-filter=aresample
+        --enable-filter=aformat
+        --enable-filter=volume
+        --enable-filter=anull
 
         --enable-protocol=async
         --enable-protocol=cache

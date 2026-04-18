@@ -1,6 +1,5 @@
 ExternalProject_Add(libsdl2
     DEPENDS
-        vulkan
         libiconv
     GIT_REPOSITORY https://github.com/libsdl-org/SDL.git
     SOURCE_DIR ${SOURCE_LOCATION}

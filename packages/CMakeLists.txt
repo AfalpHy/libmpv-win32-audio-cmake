@@ -33,13 +33,10 @@ list(APPEND ep
     brotli
     freetype2
     libudfread
-    harfbuzz
     libsoxr
     graphengine
     libzimg
-    fontconfig
     libunibreak
-    libass
     libvpl
     amf-headers
     avisynth-headers
@@ -66,7 +63,6 @@ list(APPEND ep
     spirv-cross
     glslang
     vulkan-header
-    vulkan
     libsdl2
     openal-soft
     libopenmpt

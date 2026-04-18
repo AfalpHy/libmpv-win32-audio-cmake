@@ -20,13 +20,11 @@ ExternalProject_Add(mpv-release
         fribidi
         lcms2
         libarchive
-        libass
         libjpeg
         libpng
         uchardet
         shaderc
         spirv-cross
-        vulkan
         shaderc
         spirv-cross
     URL ${LINK}
